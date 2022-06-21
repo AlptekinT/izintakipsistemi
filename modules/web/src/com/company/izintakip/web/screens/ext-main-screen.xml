@@ -26,7 +26,7 @@
                       stylename="c-sidemenu-title"
                       width="100%">
                     <label id="appTitleLabel"
-                           value="mainMsg://application.logoLabel"/>
+                           value="Test deneme"/>
                 </hbox>
                 <cssLayout id="sideMenuWrap"
                            stylename="c-sidemenu-wrap">
