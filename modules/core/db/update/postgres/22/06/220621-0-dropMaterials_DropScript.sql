@@ -1,0 +1,1 @@
+drop table if exists Ä°ZÄ°NTAKÄ°P_MATERÄ°ALS__U89079 cascade ;
