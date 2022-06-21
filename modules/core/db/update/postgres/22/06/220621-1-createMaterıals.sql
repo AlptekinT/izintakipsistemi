@@ -1,4 +1,3 @@
--- begin IZINTAKIP_MATERIALS
 create table IZINTAKIP_MATERIALS (
     ID uuid,
     VERSION integer not null,
@@ -16,5 +15,4 @@ create table IZINTAKIP_MATERIALS (
     STATUS varchar(255),
     --
     primary key (ID)
-)^
--- end IZINTAKIP_MATERIALS
+);
