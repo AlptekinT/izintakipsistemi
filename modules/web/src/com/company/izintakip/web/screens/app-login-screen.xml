@@ -30,7 +30,7 @@
                         <label id="welcomeLabel"
                                align="MIDDLE_CENTER"
                                stylename="c-login-welcome-label h1"
-                               value="mainMsg://loginWindow.welcomeLabel"/>
+                               value="İzin Takip Sistemi"/>
                         <capsLockIndicator id="capsLockIndicator"
                                            align="MIDDLE_CENTER"/>
                         <vbox id="loginForm"
@@ -82,13 +82,13 @@
                            align="MIDDLE_LEFT"
                            htmlEnabled="true"
                            stylename="c-login-powered-by-link"
-                           value="mainMsg://cuba.poweredBy"/>
+                           value="AlpteKİNG tarafından geliştirilmektedir"/>
                 </hbox>
             </vbox>
             <image id="backgroundImage"
                    scaleMode="COVER"
                    stylename="c-login-background">
-                <relativePath path="VAADIN/brand-login-screen/background.svg"/>
+                <file path="C:\Users\monster\OneDrive\Masaüstü\hts\izintakip\modules\web\web\VAADIN\images\agas.jpeg"/>
             </image>
         </cssLayout>
     </layout>
