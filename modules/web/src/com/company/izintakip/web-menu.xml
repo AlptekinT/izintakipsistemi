@@ -2,5 +2,6 @@
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
     <menu id="application-izintakip" insertBefore="administration" caption="mainMsg://menu_config.application-izintakip">
      <item screen="izintakip_Testscreen" caption="mainMsg://menu_config.izintakip_Testscreen"/>
+        <item screen="izintakip_Eskitalep" caption="mainMsg://menu_config.izintakip_Eskitalep"/>
     </menu>
 </menu-config>

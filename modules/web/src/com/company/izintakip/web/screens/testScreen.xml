@@ -4,9 +4,33 @@
         messagesPack="com.company.izintakip.web.screens">
     <layout>
 
+<!--        <groupBox orientation="horizontal" spacing="true"/>-->
 
-        <groupBox orientation="horizontal" spacing="true"/>
-
+        <grid align="TOP_CENTER" spacing="true" width="100%" height="100%">
+            <columns count="2"/>
+            <rows>
+                <row>
+                    <hbox width="50%">
+                        <textField enable="false" caption="Talep Sahibi" id="tf_talepSahip"/>
+                    </hbox>
+                    <hbox spacing="true" width="100%">
+                        <textField width="170%" enable="false" caption="Görevi" id="tf_rol"/>
+                        <textField align="MIDDLE_RIGHT" width="30%" enable="false" caption="Bakiye" id="tf_izin"/>
+                    </hbox>
+                </row>
+                <row>
+                    <lookupField required="true" caption="İzin Nedeni" id="lf_izinNeden"/>
+                    <textField required="true" caption="İzinde Bulunacağı Yer" id="izinAciklama"/>
+                </row>
+                <row>
+                    <dateField required="true" caption="Başlangıç Tarihi" id="baslangicTarih"/>
+                    <dateField required="true" caption="Bitiş Tarihi" id="bitisTarih"/>
+                </row>
+                <row>
+                    <button id="tamam" caption="Onaya Gönder" colspan="2" align="MIDDLE_CENTER"/>
+                </row>
+            </rows>
+        </grid>
 
 
     </layout>

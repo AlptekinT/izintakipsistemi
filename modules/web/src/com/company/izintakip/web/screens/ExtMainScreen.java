@@ -1,10 +1,11 @@
 package com.company.izintakip.web.screens;
 
 //import com.company.izintakip.entity.AnnualPermit;
-//import com.company.izintakip.entity.Talep;
+
 //import com.company.izintakip.web.screens.talep.EskiTalep;
 //import com.company.izintakip.web.screens.talep.TalepBrowse;
 //import com.company.izintakip.entity.Talep;
+import com.company.izintakip.web.screens.Talep;
 import com.haulmont.cuba.core.app.EmailService;
 import com.haulmont.cuba.core.global.DataManager;
 import com.haulmont.cuba.core.global.EmailInfo;
@@ -148,5 +149,26 @@ public class ExtMainScreen extends MainScreen {
                 }).show();
 
     }
+
+    @Subscribe("img_yeni_talep")
+    public void onImg_yeni_talepClick(Image.ClickEvent event) {
+
+
+        screenBuilders.screen(this).withScreenClass(Testscreen.class).build().show();
+
+/*
+        YeniTalep screen = screens.create(YeniTalep.class, OpenMode.DIALOG);
+        screen.initialize(false);
+        screen.show();
+*/
     }
+
+    
+    
+    
+    
+    
+    
+    
+}
 
