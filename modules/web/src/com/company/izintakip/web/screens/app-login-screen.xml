@@ -82,13 +82,13 @@
                            align="MIDDLE_LEFT"
                            htmlEnabled="true"
                            stylename="c-login-powered-by-link"
-                           value="AlpteKİNG tarafından geliştirilmektedir"/>
+                           value="AlpteKİNG tarafından geliştirilmektedir" height="25"/>
                 </hbox>
             </vbox>
             <image id="backgroundImage"
                    scaleMode="COVER"
                    stylename="c-login-background">
-                <classpath path="com\company\izintakip\web\screens\agas.jpeg"/>
+                <classpath path="com\company\izintakip\web\screens\images\IMG_20200716_060229.jpg"/>
             </image>
         </cssLayout>
     </layout>

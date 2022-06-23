@@ -18,7 +18,7 @@
                                scaleMode="SCALE_DOWN"/>
                         <label id="appTitleLabel"
                                stylename="c-app-title"
-                               value="mainMsg://application.logoLabel"/>
+                               value="İzin Takip Sistemi"/>
                     </cssLayout>
                     <sideMenu id="sideMenu"
                               width="100%"/>
@@ -35,10 +35,6 @@
                                 stylename="c-sidemenu-collapse-button"/>
                         <userIndicator id="userIndicator"
                                        align="MIDDLE_CENTER"/>
-                        <button id="settingsButton"
-                                icon="GEAR"
-                                description="mainMsg://settings"
-                                stylename="c-settings-button"/>
                         <logoutButton id="logoutButton"
                                       icon="SIGN_OUT"
                                       description="mainMsg://logoutBtnDescription"/>
@@ -48,23 +44,85 @@
                                 stylename="c-login-button"/>
                     </cssLayout>
                 </cssLayout>
-
             </cssLayout>
-
-
-
-
-            <button id="newRequest" stylename="friendly" caption="Yeni Talep" align="MIDDLE_CENTER"/>
-
-
-
-
-
             <workArea id="workArea"
                       stylename="c-workarea"
                       height="100%">
-                <initialLayout spacing="true" margin="true" stylename="friendly">
-                    <label align="BOTTOM_LEFT" value="This is the work area -."/>
+                <initialLayout spacing="true">
+                    <scrollBox id="scrollBox" align="MIDDLE_CENTER" orientation="vertical" responsive="true">
+                        <hbox spacing="true" margin="true" align="MIDDLE_CENTER">
+                            <vbox id="vbox_yeni_talep" spacing="true" width="AUTO" align="MIDDLE_CENTER"
+                                  visible="true" stylename="group-panel">
+                                <image id="img_yeni_talep" align="MIDDLE_CENTER" stylename="hoverstyle"
+                                       scaleMode="CONTAIN" width="240px" height="240px"
+                                       css="transition: 0.15s all linear;">
+                                    <classpath path="com\company\izintakip\web\screens\images\newrequest.png"/>
+                                </image>
+                                <label id="label_yeni_talep" value="Yeni Talep"
+                                       align="MIDDLE_CENTER"
+                                       stylename="h2 bold"/>
+                            </vbox>
+                            <vbox id="vbox_evden_calisma" spacing="true" width="AUTO" align="MIDDLE_CENTER"
+                                  visible="true" stylename="group-panel">
+                                <image id="img_evden_calisma" align="MIDDLE_CENTER" stylename="hoverstyle"
+                                       scaleMode="CONTAIN" width="240px" height="240px"
+                                       css="transition: 0.15s all linear;">
+<!--                                    <classpath path="com\company\creastechnologieshr\web\screens\images\evdenCalisma.png"/>-->
+                                </image>
+                                <label id="label_evden_calisma" value="Uzaktan Çalışma"
+                                       align="MIDDLE_CENTER"
+                                       stylename="h2 bold"/>
+                            </vbox>
+                            <vbox id="vbox_saglik" spacing="true" width="AUTO" align="MIDDLE_CENTER"
+                                  visible="true" stylename="group-panel">
+                                <image id="img_saglik" align="MIDDLE_CENTER" stylename="hoverstyle"
+                                       scaleMode="CONTAIN" width="240px" height="240px"
+                                       css="transition: 0.15s all linear;">
+<!--                                    <classpath path="com\company\creastechnologieshr\web\screens\images\health.png"/>-->
+                                </image>
+                                <label id="label_saglik" value="Sağlık Raporu"
+                                       align="MIDDLE_CENTER"
+                                       stylename="h2 bold"/>
+                            </vbox>
+                            <vbox id="vbox_eski_talep" spacing="true" width="AUTO" align="MIDDLE_CENTER"
+                                  visible="true" stylename="group-panel">
+                                <image id="img_eski_talep" align="MIDDLE_CENTER" stylename="hoverstyle"
+                                       scaleMode="CONTAIN" width="240px" height="240px"
+                                       css="transition: 0.15s all linear;">
+<!--                                    <classpath-->
+<!--                                            path="com\company\creastechnologieshr\web\screens\images\mevcutTalepler.png"/>-->
+                                </image>
+                                <label id="label_eski_talep" value="Eski Taleplerim"
+                                       align="MIDDLE_CENTER"
+                                       stylename="h2 bold"/>
+                            </vbox>
+                            <vbox id="vbox_tüm_talep" spacing="true" width="AUTO" align="MIDDLE_CENTER"
+                                  visible="false" stylename="group-panel">
+                                <image id="img_tüm_talep" align="MIDDLE_CENTER" stylename="hoverstyle"
+                                       scaleMode="CONTAIN" width="240px" height="240px"
+                                       css="transition: 0.15s all linear;">
+<!--                                    <classpath-->
+<!--                                            path="com\company\creastechnologieshr\web\screens\images\atolyedekIsler.png"/>-->
+                                </image>
+                                <label id="label_tüm_talep" value="Tüm Talepler"
+                                       align="MIDDLE_CENTER"
+                                       stylename="h2 bold"/>
+                            </vbox>
+                            <vbox id="vbox_annual_permit" spacing="true" width="AUTO" align="MIDDLE_CENTER"
+                                  visible="false" stylename="group-panel">
+                                <image id="img_annual_permit" align="MIDDLE_CENTER" stylename="hoverstyle"
+                                       scaleMode="CONTAIN" width="240px" height="240px"
+                                       css="transition: 0.15s all linear;">
+<!--                                    <classpath-->
+<!--                                            path="com\company\creastechnologieshr\web\screens\images\annualPermit.png"/>-->
+                                </image>
+                                <label id="label_annual_permit" value="Yıllık İzin Yönetimi"
+                                       align="MIDDLE_CENTER"
+                                       stylename="h2 bold"/>
+                            </vbox>
+                        </hbox>
+                    </scrollBox>
+
                 </initialLayout>
             </workArea>
         </cssLayout>
