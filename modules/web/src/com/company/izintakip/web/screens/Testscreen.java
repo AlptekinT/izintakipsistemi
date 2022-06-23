@@ -54,10 +54,8 @@ public class Testscreen extends Screen {
         optionList.add("Ölüm İzni");
         optionList.add("Doğum İzni");
         optionList.add("Evlilik İzni");
+        optionList.add("Pantolonum yok izni");
         lf_izinNeden.setOptionsList(optionList);
-
-
-
 
 
     }
