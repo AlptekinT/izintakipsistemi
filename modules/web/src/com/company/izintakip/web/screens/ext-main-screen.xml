@@ -67,7 +67,7 @@
                                 <image id="img_evden_calisma" align="MIDDLE_CENTER" stylename="hoverstyle"
                                        scaleMode="CONTAIN" width="240px" height="240px"
                                        css="transition: 0.15s all linear;">
-<!--                                    <classpath path="com\company\creastechnologieshr\web\screens\images\evdenCalisma.png"/>-->
+                                    <classpath path="com\company\izintakip\web\screens\images\healthicon.jpg"/>
                                 </image>
                                 <label id="label_evden_calisma" value="Uzaktan Çalışma"
                                        align="MIDDLE_CENTER"
